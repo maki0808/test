@@ -3,6 +3,7 @@ $(function() {
   var device = window.navigator.userAgent;
   if ((device.indexOf('iPhone') > 0 && device.indexOf('iPad') == -1) || device.indexOf('iPod') > 0 || device.indexOf('Android') > 0) {
     $(".telep").wrap('<a href="tel:00000000000" class="tel"></a>');
+    alert('SPです');
     $('.tel').click();
   }else{
     alert('PCです');
